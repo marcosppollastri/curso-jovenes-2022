@@ -7,7 +7,7 @@
 
 // console.log('Fin del programa');
 
-var {getRandomInt} = require('./Random');
+var {getRandomInt} = require('../lib/random');
 
 var stock = 1000;
 var pedido;
