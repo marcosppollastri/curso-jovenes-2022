@@ -43,3 +43,23 @@ let pokemon = {
 //1- Console.log de el nombre y edad del entrenador de Pikachu.
 //2- Modificar el valor de precisión del movimiento de nombre tacle en 100.
 //3- Eliminar el ultimo movimiento utilizando la función pop, y reemplazarlo utilizando la función push por uno nuevo.
+
+const nombre = pokemon.entrenador.nombre;
+const edad = pokemon.entrenador.edad;
+
+console.log(nombre, edad);
+
+pokemon.movimientos[1].precision = 100;
+
+console.log(pokemon.movimientos);
+
+pokemon.movimientos.pop();
+pokemon.movimientos.push({
+    nombre: 'Trueno',
+    tipo: 'electrico',
+    poder: 100,
+    precision: 60,
+    usos: 10,
+});
+
+console.log(pokemon.movimientos);
